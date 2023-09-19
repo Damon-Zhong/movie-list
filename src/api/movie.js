@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export async function getMovies(page = 1, limit = 10) {
+export async function getMovies(page = 1, limit = 30) {
    const { data } = await axios.get(`/api/movies`, {
     params: {
         page,
@@ -10,5 +10,5 @@ export async function getMovies(page = 1, limit = 10) {
 
    console.log("get movies:", data)
 
-   return data
+   return data.data.movieList
 }

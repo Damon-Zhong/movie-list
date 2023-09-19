@@ -2,6 +2,6 @@
 import('./movie')
 import './global.less'
 
-import { getMovies } from "./api/movie";
+// import { getMovies } from "./api/movie";
 
-getMovies()
+// getMovies()
