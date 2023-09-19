@@ -8,7 +8,5 @@ export async function getMovies(page = 1, limit = 30) {
     }
    })
 
-   console.log("get movies:", data)
-
-   return data.data.movieList
+   return data.data
 }

@@ -16,10 +16,6 @@ init()
  * @param movies 电影数组
  */
 export function createMovieTags(movies) {
-    for(const movie in movies){
-        console.log('movie:', movie)
-    }
-
     const result = movies.map(movie => {
        return `<div>
             <a href='${movie.url}' target="_blank">
